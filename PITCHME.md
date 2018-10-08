@@ -24,16 +24,14 @@
 
 ![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
 
----
+---?color=black
 
-
-@div[left-50]
+@div[left-70]
 <br>
 ![Sorcery](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
 @divend
 
 @div[right-50]
-<br><br><br>
 @ul[brighten]
 - Present
 - Your
@@ -41,10 +39,6 @@
 - Step-by-step
 @ulend
 @divend
-
----
-
-![Interaction Diagram](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
 
 ---
 
