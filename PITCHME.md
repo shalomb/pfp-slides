@@ -10,6 +10,10 @@
 
 ---
 
+![SD Pipeline](sd-pipeline-v2.png)
+
+---
+
 ![Project View](cicd2-project-view.png)
 
 ---
