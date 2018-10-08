@@ -14,10 +14,6 @@
 
 ---
 
-![Cost of Bug Fix](https://www.researchgate.net/profile/Oksana_Pomorova/publication/274357451/figure/fig1/AS:410916429549577@1474981519760/Cost-of-a-Bug-Within-a-Software-Lifecycle.png)
-
----
-
 ![RocketOps](https://qainfotech.com/wp-content/uploads/2017/11/How-is-Shift-left-the-Right-Approach-blog-Niharika-3rd-Nov2018.jpg)
 
 ---
@@ -34,9 +30,15 @@
 
 ---
 
-bg
-https://itbrief.com.au/uploads/story/2017/12/06/ThinkstockPhotos-868872016.jpg
+---
 
+![Cost of Bug Fix](https://www.researchgate.net/profile/Oksana_Pomorova/publication/274357451/figure/fig1/AS:410916429549577@1474981519760/Cost-of-a-Bug-Within-a-Software-Lifecycle.png)
+
+---
+
+![Stock BG](https://itbrief.com.au/uploads/story/2017/12/06/ThinkstockPhotos-868872016.jpg)
+
+---
 
 [frequency reduces difficulty]
 
