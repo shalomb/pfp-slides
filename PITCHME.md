@@ -8,15 +8,13 @@
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
----
+---?image=cicd2-project-view.png&size=auto 65%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 65%&color=white
 
 ---?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
 
 ---
-
-![Project View](cicd2-project-view.png)
 
 ---
 
