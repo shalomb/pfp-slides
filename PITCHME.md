@@ -26,7 +26,7 @@
 
 ---?color=#dfdfdf
 
-@div[left-20]
+@div[left-60]
 <br>
 ![Sorcery](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
 @divend
