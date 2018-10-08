@@ -10,7 +10,7 @@
 
 ---
 
----?image=sd-pipeline-v2.png&size=auto 90%&color=white
+---?image=sd-pipeline-v2.png&size=auto 60%&color=white
 
 ---?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
 
