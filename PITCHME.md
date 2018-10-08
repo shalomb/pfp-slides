@@ -18,6 +18,12 @@
 
 ---
 
+---?image=gitflow-branch-env-mapping.png&size=auto 100%&repeat=repeat-x&color=white
+
+foo
+
+---
+
 ![Project View](cicd2-project-view.png)
 
 ---
