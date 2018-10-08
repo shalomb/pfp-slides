@@ -14,6 +14,10 @@
 
 ---
 
+![Branching workflow](gitflow-branch-env-mapping.png)
+
+---
+
 ![Project View](cicd2-project-view.png)
 
 ---
