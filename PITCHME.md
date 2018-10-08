@@ -10,17 +10,9 @@
 
 ---
 
-![SD Pipeline](sd-pipeline-v2.png)
+---?image=sd-pipeline-v2.png&size=auto 90%&color=white
 
----
-
-![Branching workflow](gitflow-branch-env-mapping.png)
-
----
-
----?image=gitflow-branch-env-mapping.png&size=auto 100%&repeat=repeat-x&color=white
-
-foo
+---?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
 
 ---
 
