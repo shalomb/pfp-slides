@@ -16,8 +16,6 @@
 
 ---
 
----
-
 ![RocketOps](https://qainfotech.com/wp-content/uploads/2017/11/How-is-Shift-left-the-Right-Approach-blog-Niharika-3rd-Nov2018.jpg)
 
 ---
@@ -26,7 +24,7 @@
 
 ---?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 70%&color=white
 
----?color=white
+---?color=white&size=auto 90
 
 ### @color[gray](Pipeline characteristics)
 

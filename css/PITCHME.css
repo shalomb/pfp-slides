@@ -3,3 +3,6 @@
   box-shadow: none;
 }
 
+li.fragment {
+  font-size: 70% !important;
+}
