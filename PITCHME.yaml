@@ -1,3 +1,4 @@
 mathjax : TeX-AMS_HTML-full
 charts : true
+layout : top-left
 theme-override : css/PITCHME.css
