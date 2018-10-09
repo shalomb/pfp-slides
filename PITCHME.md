@@ -8,9 +8,23 @@
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
+---?color=white&size=auto 90
+
+### @color[gray](Pipeline characteristics)
+
+@div[left-70]
+<br>
+![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
+@divend
+
+@div[right-30]
+@ul[brighten]
 * Service Integration
+* CI/CD Pipeline
 * Management
-* SIAM
+* SIAM?
+@ulend
+@divend
 
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
