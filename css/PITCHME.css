@@ -6,3 +6,8 @@
 li.fragment {
   font-size: 70% !important;
 }
+
+ul.brighten {
+  padding: 0;
+  margin: 0;
+}
