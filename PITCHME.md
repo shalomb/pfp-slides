@@ -24,7 +24,7 @@
 
 ![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
 
----?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 90%&color=white
+---?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 70%&color=white
 
 ---?color=white
 
