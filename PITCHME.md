@@ -28,12 +28,12 @@
 
 ---?color=white
 
-@div[left-60]
+@div[left-70]
 <br>
 ![Sorcery](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
 @divend
 
-@div[right-50]
+@div[right-30]
 @ul[brighten]
 - Present
 - Your
