@@ -8,6 +8,10 @@
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
+* Service Integration
+* Management
+* SIAM
+
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 65%&color=white
@@ -56,13 +60,6 @@
 
 @div[right-30]
 @ul[brighten]
-* Facilitates continuity
-* One codebase (IaC)
-* Cont. Development
-* Cont. Integration
-* Cont. Validation
-* Cont. Operations
-* Separation of concerns
 * Cont. Testing
 * When? How Often?
 * What?
