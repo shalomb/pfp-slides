@@ -28,6 +28,8 @@
 
 ---?color=white
 
+### @color[gray](Pipeline characteristics)
+
 @div[left-70]
 <br>
 ![Sorcery](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
@@ -35,10 +37,16 @@
 
 @div[right-30]
 @ul[brighten]
-- Present
-- Your
-- Ideas
-- Step-by-step
+* Facilitates continuity
+  * Good separation of concerns - from the same codebase (IaC)
+  * Continuous Development & Integration
+  * Continuous Validation (Stakeholders, BAs/POs)
+  * Continuous Operations
+  * Continuous Testing
+    * When? How Often?
+    * What?
+      * Everything that is a _risk_.
+      * All changes, no matter how small.
 @ulend
 @divend
 
