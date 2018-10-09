@@ -10,7 +10,7 @@
 
 ---?color=white&size=auto 90
 
-### @color[gray](Pipeline characteristics)
+### CI/CD
 
 @div[left-70]
 <br>
@@ -20,9 +20,10 @@
 @div[right-30]
 @ul[brighten]
 * Service Integration
-* CI/CD Pipeline
 * Management
 * SIAM?
+* CI/CD using IaC
+* Integrated QA
 @ulend
 @divend
 
