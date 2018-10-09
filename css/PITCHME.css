@@ -11,3 +11,7 @@ ul.brighten {
   padding: 0;
   margin: 0;
 }
+
+.past {
+  display: none !important;
+}

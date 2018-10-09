@@ -36,15 +36,38 @@
 @div[right-30]
 @ul[brighten]
 * Facilitates continuity
-  * Good separation of concerns - from the same codebase (IaC)
-  * Continuous Development & Integration
-  * Continuous Validation (Stakeholders, BAs/POs)
-  * Continuous Operations
-  * Continuous Testing
-    * When? How Often?
-    * What?
-      * Everything that is a _risk_.
-      * All changes, no matter how small.
+* One codebase (IaC)
+* Separation of concerns
+* Cont. Development
+* Cont. Integration
+* Cont. Validation
+* Cont. Operations
+@ulend
+@divend
+
+---?color=white&size=auto 90
+
+### @color[gray](Pipeline characteristics)
+
+@div[left-70]
+<br>
+![Sorcery](https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg)
+@divend
+
+@div[right-30]
+@ul[brighten]
+* Facilitates continuity
+* One codebase (IaC)
+* Cont. Development
+* Cont. Integration
+* Cont. Validation
+* Cont. Operations
+* Separation of concerns
+* Cont. Testing
+* When? How Often?
+* What?
+* Everything that is a _risk_.
+* All changes, no matter how small.
 @ulend
 @divend
 
