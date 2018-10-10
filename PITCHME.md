@@ -1,6 +1,6 @@
 ---
 
-### The Production Factory Pipeline
+### The Pretty _Funky_ Pipeline
 
 ![Launch to the clouds](https://3ovyg21t17l11k49tk1oma21-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Launching-Apps-to-the-Clouds-Webinar.png)
 
