@@ -20,11 +20,11 @@
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
-![cicd2-project-view.png](cicd2-project-view.png)
+![Bug fix costs](https://darkviews.files.wordpress.com/2012/07/software-development-costs-bugfixing.png)
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
-![Bug fix costs](https://darkviews.files.wordpress.com/2012/07/software-development-costs-bugfixing.png)
+![cicd2-project-view.png](cicd2-project-view.png)
 
 ---?color=white&size=auto 90
 
