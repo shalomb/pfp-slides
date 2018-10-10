@@ -8,7 +8,7 @@
 
 ---?image=cicd-tools-interactions.png&size=auto 90%&color=white
 
----?image=sd-pipeline-v2.png&size=auto 70%&color=white
+---?image=sd-pipeline-v2.png&size=auto 60%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
