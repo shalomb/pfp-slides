@@ -16,6 +16,10 @@
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
+![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
+
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
+
 ![cicd2-project-view.png](cicd2-project-view.png)
 
 ---?color=white&size=auto 90
@@ -35,10 +39,6 @@
 * Integrated QA
 @ulend
 @divend
-
----?image=sd-pipeline-v2.png&size=auto 70%&color=white
-
-![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
 
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
