@@ -36,7 +36,7 @@
 @ulend
 @divend
 
----
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
 ![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
 
