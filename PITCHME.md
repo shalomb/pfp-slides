@@ -24,7 +24,7 @@
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
-![Bug fix costs2](https://www.experimentus.com/itm/F07_Cost_of_Bugs.gif)
+![CT](sl-ct.png)
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
