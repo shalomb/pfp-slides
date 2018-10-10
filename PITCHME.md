@@ -22,6 +22,10 @@
 
 ![cicd2-project-view.png](cicd2-project-view.png)
 
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
+
+![Bug fix costs](https://darkviews.files.wordpress.com/2012/07/software-development-costs-bugfixing.png)
+
 ---?color=white&size=auto 90
 
 @div[left-70]
@@ -40,11 +44,11 @@
 @ulend
 @divend
 
+---?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
+
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 65%&color=white
-
----?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
 
 ---?color=white&size=auto 90
 
