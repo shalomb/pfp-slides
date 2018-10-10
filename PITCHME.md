@@ -6,7 +6,7 @@
 
 ---?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 70%&color=white
 
----?image=cicd-tools-interactions.png&size=auto 90%&color=white
+---?image=cicd-tools-interactions.png#2&size=auto 90%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 60%&color=white
 
@@ -121,6 +121,8 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
   * GitOps
   * Insurance policy!!
 
+---
+
 * Facilitates continuity
   * Good separation of concerns - from the same codebase (IaC)
   * Continuous Development & Integration
@@ -132,20 +134,28 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
       * Everything that is a _risk_.
       * All changes, no matter how small.
 
+---
+
 * Builds QA into the deliverable
   * Maintains -> Increases QA over iterations
   * Builds confidence in the deliverable and process
 
-* Smooth delivery with a Quick feedback loop
-  * Problems should be known ASAP. _Fail fast/early_
+---
+
+* Smooth delivery/Quick feedback
+  * Problems fail the pipeline. _Fail fast/early_
     * Prevention is better than cure!!
   * Every change brings value - and _risks_
     * Increasing costs to fix the longer issues remain
     * CI requires the _right_ foundation
   * Risk reduction (quantification)
 
+---
+
 * Minimal manual interactions
   * GitOps
+
+---
 
 * Uses the same process in every environment
   * Consistency, Consistency, Consistency!!
@@ -153,8 +163,10 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
   * Frequency reduces difficulty!
   * Environment Fidelity
 
+---
+
 * Can deliver any version at any time
-  * Not necessarily deploy
+  * Not necessarily deploy the version
 
 * Security?
   * DevSecOps!
