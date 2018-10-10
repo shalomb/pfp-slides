@@ -24,6 +24,10 @@
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
+![Bug fix costs2](https://www.experimentus.com/itm/F07_Cost_of_Bugs.gif)
+
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
+
 ![cicd2-project-view.png](cicd2-project-view.png)
 
 ---?color=white&size=auto 90
