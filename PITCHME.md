@@ -14,6 +14,10 @@
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
+
+![cicd2-project-view.png](cicd2-project-view.png)
+
 ---?color=white&size=auto 90
 
 @div[left-70]
