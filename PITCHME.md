@@ -10,6 +10,8 @@
 
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
+
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
 ---?color=white&size=auto 90
@@ -25,7 +27,7 @@
 * Service Management
 * SIAM?
 * VNF Orchestration
-* CI/CD using IaC Concepts
+* VNF-as-Code
 * Integrated QA
 @ulend
 @divend
