@@ -35,6 +35,8 @@
 ---
 
 ```yaml
+stages:
+
   # ---- development -----------
                                 #
   - 'dev:prepare'               #
@@ -53,6 +55,67 @@
   - 'qa:destroy'                #
   - 'qa:rel_resources'          #
                                 #
+  # ---- staging ---------------
+                                #
+  - 'stage:deploy'              #  Release Readiness
+  - 'stage:validate-deployment' #    - Functional Testing
+  - 'stage:test-regressions'    #    - Non-Functional Testing
+  - 'stage:test-performance'    #    - Acceptance Testing
+  - 'stage:test-system'         #    - Hotfix Engineering
+                                #
+  - 'stage:test-hotfix'         #  Hotfix testing
+                                #
+  # ---- production ------------
+                                #
+  - 'prod:deploy'               #  Production Deployments
+  - 'prod:validate-deployment'  #    - Release deployments
+                                #    - Hotfixes
+  # ----------------------------
+                                #
+```
+
+---
+
+```yaml
+'dev:deploy':
+  stage: 'dev:deploy'
+  environment:
+    name: $CI_ENVIRONMENT_TYPE/$SITE/$CI_COMMIT_REF_NAME
+    url:  $URL
+  variables:
+    TASK:                deploy
+    CI_ENVIRONMENT_TYPE: dev
+    DATACENTER:          IC-HRZAGT1
+    SITE:                dev.pfp.local
+    URL:                 http://dev.pfp.local
+    ORCHESTRATOR_URL:    http://ao.pfp.local
+  allow_failure: false
+  script:
+    - ./bin/ci-run  "$TASK" "$CI_ENVIRONMENT_TYPE" "$SITE"
+  only: ['/feature/*/']
+  tags: ['vnf-cicd-demo']
+```
+
+---
+
+```yaml
+'dev:test-features':
+  stage: 'dev:test-features'
+  environment:
+    name: $CI_ENVIRONMENT_TYPE/$SITE/$CI_COMMIT_REF_NAME
+    url:  $URL
+  variables:
+    TASK:                test-features
+    CI_ENVIRONMENT_TYPE: dev
+    DATACENTER:          IC-HRZAGT1
+    SITE:                dev.pfp.local
+    URL:                 http://dev.pfp.local
+    CI_TEST_TAGS:        'features'
+  allow_failure: false
+  script:
+    - ./bin/ci-test "$CI_TEST_TAGS"
+  only: ['/feature/*/']
+  tags: ['vnf-cicd-demo']
 ```
 
 ---?color=white&size=auto 90
