@@ -30,6 +30,33 @@
 
 ![cicd2-project-view.png](cicd2-project-view.png)
 
+---?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
+
+---
+
+### gitlab-ci.yml
+
+```yaml
+  # ---- development -----------
+                                #
+  - 'dev:prepare'               #
+  - 'dev:deploy'                #  Feature Development
+  - 'dev:validate-deployment'   #    - Functional Testing
+  - 'dev:test-features'         #
+  - 'dev:teardown'              #
+                                #
+  # ---- CI/QC/QC --------------
+                                #
+  - 'qa:req_resources'          #  Feature Integration
+  - 'qa:deploy'                 #    - Functional Testing
+  - 'qa:validate-deployment'    #    - Branch Stabilization
+  - 'qa:test-ci'                #    - Bugfixing
+  - 'qa:test-bugfix'            #
+  - 'qa:destroy'                #
+  - 'qa:rel_resources'          #
+                                #
+```
+
 ---?color=white&size=auto 90
 
 @div[left-70]
@@ -47,8 +74,6 @@
 * Integrated QA
 @ulend
 @divend
-
----?image=gitflow-branch-env-mapping.png&size=auto 90%&color=white
 
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
