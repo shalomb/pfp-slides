@@ -118,7 +118,7 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 * Code
   * Git repo - the source/authority of truth.
-  * All changes driven through code (gitops)
+  * GitOps
   * Insurance policy!!
 
 * Facilitates continuity
@@ -147,11 +147,9 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 * Minimal manual interactions
   * GitOps
 
-* Uses the same process/inputs in every environment
+* Uses the same process in every environment
   * Consistency, Consistency, Consistency!!
   * Insurance policy!!
-  * Nirvana!
-  * Idempotency - f(x) = y, every single time!
   * Frequency reduces difficulty!
   * Environment Fidelity
 
@@ -160,6 +158,8 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 * Security?
   * DevSecOps!
+
+* Integrated Monitoring?
 
 * Will it fly? And fly well?
 
