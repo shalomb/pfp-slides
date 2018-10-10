@@ -4,7 +4,11 @@
 
 ![Launch to the clouds](https://3ovyg21t17l11k49tk1oma21-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Launching-Apps-to-the-Clouds-Webinar.png)
 
----
+---?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 70%&color=white
+
+---?image=cicd-tools-interactions.png&size=auto 90%&color=white
+
+---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
@@ -25,8 +29,6 @@
 * Integrated QA
 @ulend
 @divend
-
----?image=https://dt-cdn.net/images/continuous-delivery-664cf921f9.svg&size=auto 70%&color=white
 
 ---
 
