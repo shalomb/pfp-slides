@@ -34,8 +34,6 @@
 
 ---
 
-##### gitlab-ci.yml
-
 ```yaml
   # ---- development -----------
                                 #
