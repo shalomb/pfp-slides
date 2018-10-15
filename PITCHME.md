@@ -14,6 +14,25 @@
 
 ![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
 
+---?color=white&size=auto 90
+
+@div[left-70]
+<br>
+![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
+@divend
+
+@div[right-30]
+@ul[brighten]
+* What are we talking about really?
+* Service Integration onto Pan-Net platform.
+* Service Management once in production?
+* SIAM anyway? :)
+* VNF Orchestration
+* VNF-as-Code
+* Integrated QA
+@ulend
+@divend
+
 ---?image=sd-pipeline-v2.png&size=auto 70%&color=white
 
 ![MultiStage](https://www.leadingagile.com/wp-content/uploads/2018/06/CICD-4.jpg)
@@ -124,24 +143,6 @@ stages:
   tags: ['vnf-cicd-demo']
 ```
 
----?color=white&size=auto 90
-
-@div[left-70]
-<br>
-![Gears in the box](https://ddr052v6dnx4i.cloudfront.net/wp-content/uploads/2018/02/Increasing-importance-of-cross-functional-teams-and-TestOps.png)
-@divend
-
-@div[right-30]
-@ul[brighten]
-* Service Integration
-* Service Management
-* SIAM?
-* VNF Orchestration
-* VNF-as-Code
-* Integrated QA
-@ulend
-@divend
-
 ---?image=cicd2-project-view.png&size=auto 65%&color=white
 
 ---?image=sd-pipeline-v2.png&size=auto 65%&color=white
@@ -200,7 +201,6 @@ stages:
 
 ---
 
-[frequency reduces difficulty]
 
 Characteristics of good CI/CD
 
@@ -246,27 +246,32 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ---
 
-## Deployment
+## Deployments
 
+* Ephemeral deployments
+  * Throwaway and build an env everyday (CI)
+  * environments as cattle not environments as pets!
+* frequency reduces difficulty
+  * controlled repetition == managed risk
 * Uses the same process in every environment
   * Consistency, Consistency, Consistency!!
-  * Insurance policy!!
-  * Frequency reduces difficulty!
-  * Environment Fidelity
+    * Testing relatively unaffected by external factors
+  * Environment Fidelity needed (fresh envs guarantee this)
 
 ---
 
 ## So, Why pipeline?
 
 * Will it launch? And does it launch well? How far does the rocket go?
-  * Know the answer before liftoff.
+  * Know the answer before liftoff
+  * Not midway through the real mission.
 * CI/CD to deliver any version at any time
   * Not necessarily deploy the version delivered
   * Deployments decoupled from deliveries
 
 ---
 
-## So, Why pipeline?
+## So, Why pipeline? ...
 
 * Security?
   * DevSecOps accomplished via API call to nexpose, etc - on-demand in any env.
@@ -373,7 +378,7 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ## Summary
 
-The only impossible journey is the one you never begin ...
+The only impossible journey is the one that never begins
 
 * Make it work!
 * Make it work correctly!
