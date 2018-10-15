@@ -143,10 +143,6 @@ stages:
   tags: ['vnf-cicd-demo']
 ```
 
----?image=cicd2-project-view.png&size=auto 65%&color=white
-
----?image=sd-pipeline-v2.png&size=auto 65%&color=white
-
 ---?color=white&size=auto 90
 
 ### @color[gray](Pipeline characteristics)
@@ -168,6 +164,10 @@ stages:
 @ulend
 @divend
 
+---
+
+![RocketOps](https://qainfotech.com/wp-content/uploads/2017/11/How-is-Shift-left-the-Right-Approach-blog-Niharika-3rd-Nov2018.jpg)
+
 ---?color=white&size=auto 90
 
 ### @color[gray](Pipeline characteristics)
@@ -186,25 +186,6 @@ stages:
 * All changes, no matter how small.
 @ulend
 @divend
-
----
-
-![Bug fix costs](https://darkviews.files.wordpress.com/2012/07/software-development-costs-bugfixing.png)
-
----
-
-![Cost of Bug Fix](https://www.researchgate.net/profile/Oksana_Pomorova/publication/274357451/figure/fig1/AS:410916429549577@1474981519760/Cost-of-a-Bug-Within-a-Software-Lifecycle.png)
-
----
-
-![RocketOps](https://qainfotech.com/wp-content/uploads/2017/11/How-is-Shift-left-the-Right-Approach-blog-Niharika-3rd-Nov2018.jpg)
-
----
-
-
-Characteristics of good CI/CD
-
-https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ---
 
@@ -385,3 +366,6 @@ The only impossible journey is the one that never begins
 * Make it work fast!
 
 ---
+
+https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
+
