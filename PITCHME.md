@@ -34,6 +34,8 @@
 
 ---
 
+`gitlab-ci.yml` stages
+
 ```yaml
 stages:
 
@@ -76,6 +78,8 @@ stages:
 
 ---
 
+`gitlab-ci.yml` example deployment job
+
 ```yaml
 'dev:deploy':
   stage: 'dev:deploy'
@@ -92,11 +96,13 @@ stages:
   allow_failure: false
   script:
     - ./bin/ci-run  "$TASK" "$CI_ENVIRONMENT_TYPE" "$SITE"
-  only: ['/feature/*/']
+  only: ['/feature/*/']        # <-- Varies in each environment
   tags: ['vnf-cicd-demo']
 ```
 
 ---
+
+`gitlab-ci.yml` example test invocation job
 
 ```yaml
 'dev:test-features':
@@ -110,11 +116,11 @@ stages:
     DATACENTER:          IC-HRZAGT1
     SITE:                dev.pfp.local
     URL:                 http://dev.pfp.local
-    CI_TEST_TAGS:        'features'
+    CI_TEST_TAGS:        'features'   # <-- CSV list, varies in each env.
   allow_failure: false
   script:
     - ./bin/ci-test "$CI_TEST_TAGS"
-  only: ['/feature/*/']
+  only: ['/feature/*/']               # <-- Matches deploy job in env.
   tags: ['vnf-cicd-demo']
 ```
 
@@ -238,10 +244,9 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ---
 
-* Minimal manual interactions
-  * GitOps
-
 ---
+
+## Deployment
 
 * Uses the same process in every environment
   * Consistency, Consistency, Consistency!!
@@ -251,39 +256,96 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ---
 
-* Can deliver any version at any time
-  * Not necessarily deploy the version
+## So, Why pipeline?
 
-* Security?
-  * DevSecOps!
-
+* Will it launch? And does it launch well? How far does the rocket go?
+  * Know the answer before liftoff.
+* CI/CD to deliver any version at any time
+  * Not necessarily deploy the version delivered
+  * Deployments decoupled from deliveries
+* What about Security?
+  * DevSecOps accomplished via API call to nexpose, etc - on-demand in any env.
 * Integrated Monitoring?
-
-* Will it fly? And fly well?
-
-[smooth]
-[fail fast]
-[testing]
-  * When
-  * How often?
-[feedback]
-
+  * Monitor the pipeline itself!
+  * Monitor the deliverable (VNF) too!
 
 ---
 
-Why?
+## So, Why Pipeline?
 
-Assuring a high quality deliverable
-Keeping customers happy
-Keeping admins happy
-  * Project
-  * Platform
-Short lead-times
+* Short(er) lead-times
   * Service Integrations
   * Features/Changes
-  * Bug fixes
+  * Bugfixes/Hotfixes
   * Upgrades
-Innovating in a complex climate
+* Innovating in a complex climate
+  * Not all features reach prod!!
+    * A/B Testing, Hypothesis testing artefacts are throwaway!
+* Smaller changes == lower risk!
+  * Rollbacks/repeals/deprecations are easier to manage.
+
+---
+
+## So, Why pipeline? Testing ...
+
+* Assuring a high quality deliverable
+  * Consistently!
+  * QA increases proportionally to iterations.
+  * TDD/BDD guide solution - instead of tests fitting solution.
+  * Test coverage maximised with TDD/BDD and Continuous Testing.
+* Keeping customers (Stakeholders, Project, NatCo, Platform, Admins, etc) happy
+  * Nirvana!!
+
+---
+
+## So, Why pipeline? ...
+
+* Minimal manual interactions
+  * GitOps
+* Nirvana!!
+
+---
+
+## Gotchas
+
+* It's possible to deliver the _wrong_ thing.
+* It's possible to break things (and not realize it).
+
+* CI/CD == As good as the inputs == Garbage-in/Garbage-out
+
+* Continuous Testing should _shift-left_ into requirements
+  * Requirements can be tested, believe it or not!
+* Stakeholder input? Early? Before dev?
+  * Mostly always a good thing!!
+
+---
+
+## Gotchas
+
+* But there are too many environments?
+  * Production is given!
+  * Staging is given!
+    * Expensive testing, time consuming (~hours/days/weeks)
+    * Small issues must be avoided before they reach here!
+  * Dev allows _clean-room_ development and testing
+    * env. noise and cruft can taint dev
+  * QA/QC/Testing is needed to integrate multiple dev outputs
+    * Fail-fast, fail-forward
+
+---
+
+## Gotchas
+
+* But there are too many release gates?
+  * Yes, continuous delivery == short cycles _not_ all-the-time!
+  * Manual oversight == sleep well at night, worth it!
+
+* But there are too many branches?
+  * Just like there are many rooms in an office!
+  * Or many conveyor belts on a factory floor!
+  * Continuous dev + Continuous test + Continuous validation + Continuous Ops
+    * In parallel as well!
+    * All in one code-base!
 
 ---
 
@@ -301,13 +363,6 @@ Change Control
 No
 
 Only part of the story
-
-CI/CD == As good as the inputs
-CI/CD == Garbage-in/Garbage-out
-
-It's possible to deliver the _wrong_ thing.
-
-It's possible to break things (and not realize it).
 
 ---
 
