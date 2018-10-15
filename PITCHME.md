@@ -189,41 +189,23 @@ stages:
 
 ---
 
+# IaC
+
 * Code
-  * Git repo - the source/authority of truth.
-  * GitOps
+  * Git repo - the source/authority of truth _not_ production!
   * Insurance policy!!
+  * Diff-able
+  * Auditable
+  * Realizes GitOps
 
 ---
 
-* Facilitates continuity
-  * Good separation of concerns - from the same codebase (IaC)
-  * Continuous Development & Integration
-  * Continuous Validation (Stakeholders, BAs/POs)
-  * Continuous Operations
-  * Continuous Testing
-    * When? How Often?
-    * What?
-      * Everything that is a _risk_.
-      * All changes, no matter how small.
+# IaC ...
 
----
-
-* Builds QA into the deliverable
-  * Maintains -> Increases QA over iterations
-  * Builds confidence in the deliverable and process
-
----
-
-* Smooth delivery/Quick feedback
-  * Problems fail the pipeline. _Fail fast/early_
-    * Prevention is better than cure!!
-  * Every change brings value - and _risks_
-    * Increasing costs to fix the longer issues remain
-    * CI requires the _right_ foundation
-  * Risk reduction (quantification)
-
----
+* `master` branch must always be green
+* commit frequently - to your branch, cleanup later
+  * Continuous testing remember!!
+* Let CI testing catch issues
 
 ---
 
@@ -238,6 +220,29 @@ stages:
   * Consistency, Consistency, Consistency!!
     * Testing relatively unaffected by external factors
   * Environment Fidelity needed (fresh envs guarantee this)
+
+---
+
+## So, Why pipeline?
+
+* Facilitates business continuity
+  * Dev -> Test -> Pre-release -> Release -> Ops
+  * All at the same time!
+* Builds QA into the deliverable
+  * Maintains -> Increases QA over iterations
+  * Builds confidence in the deliverable and process
+
+---
+
+## So, Why pipeline?
+
+* Smooth delivery/Quick feedback
+  * Problems fail the pipeline. _Fail fast/early_
+    * Prevention is better than cure!!
+  * Every change brings value - and _risks_
+    * Increasing costs to fix the longer issues remain
+    * CI requires the _right_ foundation
+  * Risk reduction (quantification)
 
 ---
 
@@ -287,9 +292,10 @@ stages:
 
 * Assuring a high quality deliverable
   * Consistently!
-  * QA increases proportionally to iterations.
+  * QA increases proportionally to iterations/over-time.
   * TDD/BDD guide solution - instead of tests fitting solution.
-  * Test coverage maximised with TDD/BDD and Continuous Testing.
+  * Continuous Testing and TDD/BDD ensure high test coverage.
+    * Testing is not an after-thought!
 * Keeping customers (Stakeholders, Project, NatCo, Platform, Admins, etc) happy
   * Nirvana!!
 
@@ -297,27 +303,29 @@ stages:
 
 ## So, Why pipeline? ...
 
-* Minimal manual interactions
+* Minimal manual work
   * GitOps
+  * In the cloud - Manual work is lost!
 * Nirvana!!
 
 ---
 
 ## Gotchas
 
+* CI/CD == As good as the inputs == Garbage-in/Garbage-out
+
 * It's possible to deliver the _wrong_ thing.
 * It's possible to break things (and not realize it).
 
-* CI/CD == As good as the inputs == Garbage-in/Garbage-out
-
+* Continuous Testing is the answer!
 * Continuous Testing should _shift-left_ into requirements
   * Requirements can be tested, believe it or not!
-* Stakeholder input? Early? Before dev?
+* Stakeholder input? Early? Before implementation? Sure!!
   * Mostly always a good thing!!
 
 ---
 
-## Gotchas
+## Gotchas ...
 
 * But there are too many environments?
   * Production is given!
@@ -331,25 +339,28 @@ stages:
 
 ---
 
-## Gotchas
+## Gotchas ...
 
 * But there are too many release gates?
   * Yes, continuous delivery == short cycles _not_ all-the-time!
   * Manual oversight == sleep well at night, worth it!
+  * Automated releasing needed eventually!`
+
+## Gotchas ...
 
 * But there are too many branches?
   * Just like there are many rooms in an office!
-  * Or many conveyor belts on a factory floor!
-  * Continuous dev + Continuous test + Continuous validation + Continuous Ops
+  * Yes! But there's structure for higher purpose!
+  * Continuous dev + test + validation + delivery + deployments + Ops
     * In parallel as well!
-    * All in one code-base!
+    * Entire app in one code-base!
 
 ---
 
-## Gotchas
+## Gotchas ...
 
 * But I may need to manually change something in prod!
-  * This is risky! Goes against IaC
+  * This is risky, retro! Goes against IaC
   * No! Follow the hotfix process (that's the short circuit to prod!)
   * Yes! P1s/Emergencies, But change must be brought back into code
     * And deployed back to staging for verification
@@ -367,5 +378,6 @@ The only impossible journey is the one that never begins
 
 ---
 
-https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
+* https://docbox.etsi.org/isg/nfv/open/Drafts/TST006_CICD_and_Devops_report/NFV-TST006v003.docx
+* https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
