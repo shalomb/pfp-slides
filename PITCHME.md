@@ -263,7 +263,12 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 * CI/CD to deliver any version at any time
   * Not necessarily deploy the version delivered
   * Deployments decoupled from deliveries
-* What about Security?
+
+---
+
+## So, Why pipeline?
+
+* Security?
   * DevSecOps accomplished via API call to nexpose, etc - on-demand in any env.
 * Integrated Monitoring?
   * Monitor the pipeline itself!
@@ -278,11 +283,17 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
   * Features/Changes
   * Bugfixes/Hotfixes
   * Upgrades
+
+---
+
+## So, Why Pipeline?
+
 * Innovating in a complex climate
   * Not all features reach prod!!
     * A/B Testing, Hypothesis testing artefacts are throwaway!
 * Smaller changes == lower risk!
   * Rollbacks/repeals/deprecations are easier to manage.
+  * Major upsets avoided!
 
 ---
 
@@ -349,77 +360,23 @@ https://www.thoughtworks.com/insights/blog/5-traits-good-delivery-pipeline
 
 ---
 
-CI/CD the key?
+## Gotchas
 
-Yes
-
-Automation
-Consistency
-Version Control
-Change Control
-
----
-
-No
-
-Only part of the story
+* But I may need to manually change something in prod!
+  * This is risky! Goes against IaC
+  * No! Follow the hotfix process (that's the short circuit to prod!)
+  * Yes! P1s/Emergencies, But change must be brought back into code
+    * And deployed back to staging for verification
+  * Pipeline discipline over time _will_ reduce need for hotfixes.
 
 ---
 
-How do we deliver the _right_ thing?
+## Summary
 
-CT
-Good feedback loops
-Avoiding the pitfalls - manual changes
-
----
-
-CI
-
-When engineers branch of mainline, work in a clean room and integrate changes back
-_continuously_.
-
----
-
-CD
-
-When the mainline branch is always builable/deployable.
-
----
-
-How often is _continuous_?
-
-Variable. Depends on complexity of the deliverable, external factors.
-
-We have to support this variability, but ensure the _correct_
-
-https://sdtimes.com/wp-content/uploads/2017/09/Screen-Shot-2017-09-08-at-2.46.10-PM.png
-
-Continuous Testing
-
-Simple view
-https://cdn-images-1.medium.com/max/1200/1*6WSm4DEcxYwf4-wDuh_wLQ.png
-
-Test view
-https://www.accenture.com/t20150923T092203Z__w__/us-en/_acnmedia/Accenture/Conversion-Assets/Blogs/Images/5/Accenture-Continuous-Delivery-Vs-Continuous-Deployment.pngla=en?la=en
-
-Shift Left
-https://www.kovair.com/blog/wp-content/uploads/2017/12/blog-graphics-12-1.jpg
-
-Ideas to extend this
-https://static1.squarespace.com/static/54dc6222e4b033be8f10b195/t/57547113d51cd4cfabfe3c5d/1465151827081/
-
-Managers View
-https://www.scholarwebservices.com/wp-content/uploads/2017/06/457-image-for-devops-part-of-blog_new-way_560x560.png
-
-Engineers View
-https://devops360.files.wordpress.com/2016/09/delivery_pipeline.png
-
----
+The only impossible journey is the one you never begin ...
 
 * Make it work!
 * Make it work correctly!
 * Make it work fast!
 
 ---
-
